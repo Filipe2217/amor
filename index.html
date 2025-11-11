@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>❤️‍🩹</title>
+<style>
+  body {
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+
+  .caixa {
+    width: 220px;
+    height: 180px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #ecf0eb;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+
+  .titulo {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .texto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .botoes {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 10px;
+  }
+
+  button {
+    padding: 5px 12px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+  <div class="caixa" id="caixa">
+    <div class="titulo">ATENÇÃO</div>
+    <div class="texto">Meu bem, vc me ama?</div>
+    <div class="botoes">
+      <button id="sim">Sim</button>
+      <button id="nao">Não</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💖 Eu te amo 💖</title>
+<style>
+  body {
+    background: linear-gradient(135deg, #ffd6e0, #fff0f5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  h1 {
+    color: #ff4b7d;
+    font-size: 3em;
+    margin: 0;
+    animation: pulse 2s infinite;
+  }
+
+  p {
+    color: #ff80a6;
+    font-size: 1.5em;
+    max-width: 600px;
+    margin-top: 20px;
+  }
+
+  .heart {
+    position: absolute;
+    color: #ff4b7d;
+    font-size: 24px;
+    animation: floatUp 4s linear infinite;
+    opacity: 0.7;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(-100vh) scale(0.5);
+      opacity: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <h1>💖 Eu te amo 💖</h1>
+  <p>
+   Meu bem ou minha princesa, eu te amo mais do que vc pode sentir...
+    <br>Vc é o meu sol que deixa tudo iluminado. 🌷☀️  
+    <br> Eu só quero saber se vc me ama 
+    <br><strong>Pq eu vou te amar hoje, amanhã e sempre. 💌</strong>
+  </p>
+
+  <script>
+    // Gera corações subindo pelo fundo 💕
+    function criarCoracao() {
+      const coracao = document.createElement("div");
+      coracao.classList.add("heart");
+      coracao.textContent = "💗";
+      coracao.style.left = Math.random() * 100 + "vw";
+      coracao.style.animationDuration = 3 + Math.random() * 2 + "s";
+      document.body.appendChild(coracao);
+      setTimeout(() => coracao.remove(), 4000);
+    }
+    setInterval(criarCoracao, 300);
+  </script>
+
+</body>
+</html>
